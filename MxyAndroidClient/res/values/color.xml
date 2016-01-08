@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- guide bar -->
+	<color name="guide_bar_btn_txt_color">#999999</color>
+	<color name="guide_bar_btn_txt_focus_color">#FFFFFF</color>
+	
+	<!-- product list -->
+	<color name="product_list_item_bg_focus_color">#0484f2</color>
+	
+	<!-- login -->
+	<color name="welcome_use_app_txt_color">#bebdbd</color>
+	<color name="remember_passwd_txt_color">#c0c0c0</color>
+	<color name="forget_passwd_txt_color">#7d7d7d</color>
+	<color name="copy_right_txt_color">#7d7d7d</color>
+	
+	<!-- account -->
+	<color name="account_info_txt_color">#7d7d7d</color>
+	
+	<!-- common -->
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="gray">#8C8C8C</color>
+	<color name="red">#FF0000</color>
+	
+	<!-- share -->
+	<color name="share_list_item_name_txt_color">#1E90FF</color>
+	
+	<!-- order list -->
+	<color name="order_list_common_color">#9e9e9e</color>
+	
+	<!-- trollery -->
+	<color name="empty_cart_txt_color">#303030</color>
+	
+	<!-- photo album -->
+	<color name="photo_album_detial_desc_txt_color">#7d7d7d</color>
+	<color name="photo_album_detial_desc_txt_color_modify">#324f85</color>
+	
+	<color name="title_txt_color">#60a3d1</color>
+	<color name="more_txt_color">#60a3d1</color>
+</resources>

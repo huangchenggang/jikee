@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recharge_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/account_item_top_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" 
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/account_recharge_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/account_recharge_item_content_margin_left"
+        android:background="@drawable/account_recharge_card_100" />
+
+    <TextView
+        android:id="@+id/account_recharge_item_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/account_recharge_item_content_margin_left"
+        android:gravity="center"
+        android:text="@string/account_recharge_number_one_hundred"
+        android:textSize="@dimen/account_recharge_item_content_txt_size" />
+
+</LinearLayout>

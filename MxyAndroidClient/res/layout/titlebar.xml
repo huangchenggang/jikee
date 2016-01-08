@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title_bar_bg"
+    android:gravity="center_vertical" 
+    android:padding="5dp">
+
+    <!-- title bar -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_btn_height"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/back_btn_selector"
+        android:gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="10dip"
+        android:textSize="@dimen/title_bar_btn_txt_size"
+        android:text="@string/back" 
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp"/>
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_btn_height"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/cancel_btn_selector"
+        android:gravity="center"
+        android:layout_marginRight="10dip"
+        android:textSize="@dimen/title_bar_btn_txt_size"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone"/>
+
+</FrameLayout>

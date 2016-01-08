@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/item_root"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_item_normal_selector"
+        android:orientation="horizontal" 
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/goods_image"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/goods_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="photoball"
+                android:singleLine="true"
+                android:ellipsize="end" 
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="圆形气球"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/goods_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="18cm圆形气球照片" 
+                android:textColor="@color/black"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/send_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="预计发货时间：2个工作日"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="RMB 20.00" />
+
+            <EditText
+                android:id="@+id/count"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/product_list_arrow"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/product_list_item_arrow_height"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:src="@drawable/product_list_item_arrow_selector" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trolley_margin_all" 
+        android:layout_marginTop="@dimen/trolley_margin_all"/>
+
+</LinearLayout>

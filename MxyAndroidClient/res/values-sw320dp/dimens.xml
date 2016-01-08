@@ -1,0 +1,32 @@
+<!-- 此处添加对SIII,小米的适配 -->
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- guide bar -->
+    <dimen name="guide_bar_btn_height">55dp</dimen>
+    
+    <!-- title bar -->
+    <dimen name="title_bar_btn_height">37dp</dimen>
+    <dimen name="title_bar_btn_txt_size">16sp</dimen>
+    
+    <!-- home page -->
+    <dimen name="home_page_get_it_now_margin_top">630dp</dimen>
+    <dimen name="home_page_pay_now_margin_top">880dp</dimen>
+
+    <!-- Carousel -->
+    <dimen name="carousel_pic_height">202.5dp</dimen>
+    
+    <!-- order list -->
+    <dimen name="order_bottom_btn_height">60dp</dimen>
+    
+    <!-- product list -->
+    <dimen name="product_list_item_arrow_height">14dp</dimen>
+    
+	<!-- photo album -->
+    <dimen name="photo_album_pic_item_width">70dp</dimen>
+    <dimen name="photo_album_pic_item_height">70dp</dimen>
+    
+</resources>

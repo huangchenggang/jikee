@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout  
+        android:paddingBottom="@dimen/order_all_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <LinearLayout
+            android:layout_gravity="center_horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/order_all_margin"
+            android:padding="@dimen/order_all_margin"
+            android:background="@drawable/shopping_trolley_item_bg"
+	        android:orientation="vertical" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/order_deal_date"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="@dimen/order_use_info_margin_top"
+	                android:text="@string/deal_date"
+	                style="@style/order_list_common_txt_style"/>
+	
+	            <TextView
+	                android:id="@+id/order_sn"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="@dimen/order_use_info_margin_top"
+	                android:text="@string/order_num"
+	                style="@style/order_list_common_txt_style"/>
+	
+	            <TextView
+	                android:id="@+id/alipay_order_sn"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="@dimen/order_use_info_margin_top"
+	                android:text="@string/alipay_order_num"
+	                style="@style/order_list_common_txt_style" 
+	                android:visibility="gone"/>
+	
+	            <TextView
+	                android:id="@+id/order_receiver"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="@dimen/order_use_info_margin_top"
+	                android:text="@string/order_receiver"
+	                style="@style/order_list_common_txt_style" />
+	
+	            
+	            
+	            <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:visibility="visible" >
+		            <TextView
+		                android:id="@+id/order_delivery_address_prefix"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:paddingTop="2dp"
+		                android:text="@string/goods_delivery_address"
+		                style="@style/order_list_common_txt_style" />
+		            <TextView
+		                android:id="@+id/order_delivery_address_main"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:paddingTop="2dp"
+		                android:layout_toRightOf="@id/order_delivery_address_prefix"
+		                style="@style/order_list_common_txt_style"
+		                android:singleLine="true"/>
+		            <TextView
+		                android:id="@+id/order_delivery_address_detial"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:paddingTop="2dp"
+		                android:layout_toRightOf="@id/order_delivery_address_prefix"
+		                android:layout_below="@id/order_delivery_address_main"
+		                style="@style/order_list_common_txt_style"
+		                android:singleLine="true"/>
+		        </RelativeLayout>
+	            
+	            
+	        </LinearLayout>
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/order_item_line_margin"
+	            android:layout_marginRight="@dimen/order_item_line_margin"
+	            android:layout_marginTop="@dimen/order_use_info_margin_top"
+	            android:background="@drawable/orders_line" />
+	
+	        <LinearLayout
+	            android:id="@+id/order_goods_item_layout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_marginTop="15dp"
+	            android:gravity="right"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/order_total_pay"
+	                style="@style/order_list_black_txt_style"/>
+	
+	            <TextView
+	                android:id="@+id/order_total_payment"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/order_actual_price_margin_left_right"
+	                android:text="@string/order_total_pay_price"
+	                android:textColor="@color/red"
+	                android:textSize="@dimen/order_actual_price_txt_size" />
+	
+	            <TextView
+	                android:id="@+id/express_cost"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/order_actual_price_margin_left_right"
+	                android:layout_marginRight="@dimen/order_actual_price_margin_left_right"
+	                android:text="@string/order_express_fee"
+	                style="@style/order_list_common_txt_style" />
+	        </LinearLayout>
+	    </LinearLayout>
+	     <ImageView
+            android:id="@+id/order_unship_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_list_item_unship_info_margin"
+            android:layout_marginRight="@dimen/order_list_item_unship_info_margin"
+            android:src="@drawable/order_unpay_info" 
+            android:layout_gravity="top|right"/>
+    </FrameLayout>
+   
+
+    <LinearLayout
+        android:id="@+id/order_item_opt_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_bottom_btn_height"
+        android:layout_marginTop="@dimen/order_all_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/give_up_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/order_all_margin"
+            android:layout_weight="3"
+           android:background="@drawable/pay_btn_seletor"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/give_orders"
+            android:textColor="@color/white"
+            android:textSize="@dimen/order_bottom_btn_txt_size" 
+            />
+
+        <TextView
+            android:id="@+id/confirm_payment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/order_btn_confirm_margin_left"
+            android:layout_marginRight="@dimen/order_all_margin"
+            android:layout_weight="3"           
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/confirm_payment"
+            android:textColor="@color/white"
+             android:background="@drawable/pay_now_btn_selector"
+            android:textSize="@dimen/order_bottom_btn_txt_size" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

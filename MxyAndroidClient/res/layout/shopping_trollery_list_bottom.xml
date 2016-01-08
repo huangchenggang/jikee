@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:visibility="visible" 
+    android:background="@android:color/transparent"
+    android:clickable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/change_delivery_address"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/trolley_margin_all"
+            android:layout_marginTop="20dp"
+            android:layout_weight="4"
+            android:background="@drawable/shopping_trollery_btn_seletor"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/change_delivery_address"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/goods_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goods_fee" />
+
+            <TextView
+                android:id="@+id/express_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/express_fee" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/goods_receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingTop="5dp"
+            android:text="@string/goods_receiver"
+            android:textSize="@dimen/trolley_good_receive_info_txt_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+            <TextView
+                android:id="@+id/goods_delivery_address_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="2dp"
+                android:text="@string/goods_delivery_address"
+                android:textSize="@dimen/trolley_good_receive_info_txt_size" />
+            <TextView
+                android:id="@+id/goods_delivery_address_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:layout_toRightOf="@id/goods_delivery_address_prefix"
+                android:textSize="@dimen/trolley_good_receive_info_txt_size" />
+            <TextView
+                android:id="@+id/goods_delivery_address_detial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:layout_toRightOf="@id/goods_delivery_address_prefix"
+                android:layout_below="@id/goods_delivery_address_main"
+                android:textSize="@dimen/trolley_good_receive_info_txt_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/telphone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="2dp"
+            android:text="@string/telphone_number"
+            android:textSize="@dimen/trolley_good_receive_info_txt_size" />
+
+        <TextView
+            android:id="@+id/zip_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="44dp"
+            android:paddingTop="2dp"
+            android:text="@string/zip_code"
+            android:textSize="@dimen/trolley_good_receive_info_txt_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/actual_pay"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/actual_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/pay_yuan"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/prompt_payment"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/common_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pay_btn_seletor"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/prompt_payment"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/trolley_help"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/trolley_bottom_btn_height"
+                android:layout_marginLeft="@dimen/trolley_margin_all"
+                android:layout_weight="1"
+                android:background="@drawable/shopping_trollery_btn_seletor"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/trolley_help"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/trolley_bottom_help_txt_size" />
+
+            <TextView
+                android:id="@+id/call_the_yly"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/trolley_bottom_btn_height"
+                android:layout_marginLeft="@dimen/trolley_margin_all"
+                android:layout_marginRight="@dimen/trolley_margin_all"
+                android:layout_weight="1"
+                android:background="@drawable/shopping_trollery_btn_seletor"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/call_the_yly"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/trolley_bottom_help_txt_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

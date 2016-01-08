@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.extensivepro.mxl.widget.MaskableImageView
+        android:id="@+id/navigate_image"
+        android:layout_width="match_parent"
+   		android:layout_height="@dimen/carousel_pic_height"
+        android:layout_gravity="center"
+        android:duplicateParentState="true"
+        android:gravity="center"
+        android:background="@drawable/transparent"/>
+    
+	<ProgressBar android:id="@+id/load_progress"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    style="?android:attr/progressBarStyleSmall"
+	    android:layout_gravity="center"/>
+</FrameLayout>

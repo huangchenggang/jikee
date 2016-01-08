@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <com.extensivepro.mxl.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <com.extensivepro.mxl.widget.MyGridView
+            android:id="@+id/mGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:gravity="center_horizontal"
+            android:numColumns="3"
+            android:scrollbars="vertical" >
+        </com.extensivepro.mxl.widget.MyGridView>
+    </ScrollView>
+
+</LinearLayout>

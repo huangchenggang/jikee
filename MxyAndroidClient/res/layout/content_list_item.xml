@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/content_list_bg" 
+    android:layout_marginTop="@dimen/content_body_margin_top"
+    android:layout_marginLeft="@dimen/content_body_margin_left"
+    android:paddingBottom="@dimen/content_body_margin_bottom">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:text="标题"
+        android:textColor="@color/title_txt_color"
+        android:textStyle="bold" 
+        android:textSize="@dimen/content_title_txt_size"
+        android:layout_margin="@dimen/content_title_txt_margin"
+        android:paddingRight="90dp"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="2012-12-12"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/content_date_txt_size"
+        android:layout_margin="@dimen/content_title_txt_margin"/>
+    <com.extensivepro.mxl.widget.EllipsizeableTextView
+        android:id="@+id/content"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:text="内容fasdfadsf kasdhf djasflasd fjkldasfkljasdlflask"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_content_txt_size"
+        android:layout_margin="@dimen/content_title_txt_margin"
+        android:paddingBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="更多"
+        android:textColor="@color/more_txt_color"
+        android:textStyle="bold" 
+        android:textSize="@dimen/content_more_txt_size"
+        android:layout_margin="@dimen/content_title_txt_margin"/>
+
+
+</RelativeLayout>

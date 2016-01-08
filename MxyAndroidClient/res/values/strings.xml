@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common -->
+    <string name="app_name">优丽印</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="confirm">确定</string>
+	<string name="cancel">取消</string>
+	
+	<string name="app_new_push_message">您有一条新的推送消息</string>
+    
+    <string name="welcome_use_app">欢迎登陆优丽印</string>
+    
+    <string name="back">返回</string>
+    
+    <!-- guide bar -->
+	<string name="home_page">首页</string>
+	<string name="product">产品</string>
+	<string name="account">账户</string>
+	<string name="trollery">购物车</string>
+	<string name="share">购物分享</string>
+	
+	<!-- login page -->
+	<string name="type_email">E-mail</string>
+	<string name="type_passwd">6-16位字符</string>
+	<string name="prefix_account">账户:</string>
+	<string name="prefix_passwd">密码:</string>
+	<string name="register">注册</string>
+	<string name="login">登录</string>
+	<string name="remember_passwd">记住密码</string>
+	<string name="forgot_passwd_info">如果忘记密码，请点击这里</string>
+	<string name="copy_right_cn">优丽印 版权所有</string>
+	<string name="copy_right_en">Copyright © 2013 YouLiYin.</string>
+	<string name="copy_right_baseline">All Rights Reserved.</string>
+	<string name="login_dialog_title">正在登录，请稍候</string>
+	<string name="logout_dialog_title">正在注销，请稍候</string>
+	
+	<!-- home page -->
+	<string name="get_it_now">马上点击领取</string>
+	<string name="pay_now">现在去充值</string>
+	<string name="toast_has_got_free_sale">对不起，当前账户已领取过免费赠送</string>
+	<string name="toast_has_not_loggin">对不起，您还没有登录。</string>
+	
+	<!-- product list page -->
+	<string name="search_edit_hit">搜索</string>
+	
+	<!-- account -->
+	<string name="cur_account_txt">您的账户: %s</string>
+	<string name="available_balance_txt">可用余额: %s</string>
+	<string name="order_state_txt">订单状态</string>
+	<string name="delivery_address_txt">收货地址</string>
+	<string name="account_recharge_txt">账户充值</string>
+	<string name="notify_msg_txt">通知消息</string>
+	<string name="about_mxl_app_txt">关于本软件</string>
+	<string name="score_me_txt">给我评分</string>
+	<string name="feedback_me_txt">给我反馈</string>
+	<string name="logout_btn_txt">注销</string>
+	<string name="logout_alert_txt">注销当前账户?</string>
+	<string name="dialog_title_invalid_order">放弃当前订单?</string>
+	<string name="dialog_title_confirm_pay_order">确认付款?</string>
+	
+	<!-- account recharge -->
+	<string name="account_recharge_number_one_hundred">充值卡\u0020\u0020\u0020\u0020\u0020100元\u0020\u0020\u0020送5元</string>
+	<string name="account_recharge_number_two_hundred">充值卡\u0020\u0020\u0020\u0020\u0020200元\u0020\u0020\u0020送15元</string>
+	<string name="account_recharge_number_five_hundred">充值卡\u0020\u0020\u0020\u0020\u0020500元\u0020\u0020\u0020送50元</string>
+	<string name="account_recharge_number_one_thousand">充值卡\u0020\u0020\u00201000元\u0020\u0020\u0020送130元</string>
+	<string name="account_recharge_number_three_thousand">充值卡\u0020\u0020\u00203000元\u0020\u0020\u0020送450元</string>
+	<string name="account_recharge_top_remark_txt">购买充值卡，享受更多优惠</string>
+	<string name="account_recharge_bottom_remark_txt">注：账户余额不可用于购买充值卡</string>
+	<string name="dialog_title_pay_deposit_card">确认购买?</string>
+	
+	<!-- about app -->
+	<string name="software_license_agreement_txt">软件使用许可协议</string>
+	<string name="special_instruction_txt">特别说明</string>
+	<string name="special_notice">&#x0020;&#x0020;&#x0020;优丽印在此声明，您通过本软件参加的商业活动，与Apple Inc.无关。</string>
+	<string name="use_help_txt">使用帮助</string>
+	<string name="version_info">优丽印1.0</string>
+	
+	<!-- order state -->
+	<string name="unpay_orders_txt">未付款订单</string>
+	<string name="order_history_txt">历史订单</string>
+	
+	<!-- order list -->
+	<string name="deal_date">成交于:%s</string>
+	<string name="order_num">订单编号:%s</string>
+	<string name="alipay_order_num">支付宝订单:%s</string>
+	<string name="order_receiver">收货人:%s</string>
+	<string name="order_delivery_address">收货地址:%s</string>
+	<string name="order_goods_number">数量：</string>
+	<string name="order_actual_pay">实付款</string>
+	<string name="order_actual_pay_price">￥%s</string>
+	<string name="order_total_pay">总价：</string>
+	<string name="order_total_pay_price">￥%s</string>
+	<string name="give_orders">放弃订单</string>
+	<string name="confirm_payment">确认付款</string>
+	<string name="order_express_fee">(快寄：￥%s)</string>
+	<string name="order_goods_item_count_prefix_txt">数量:</string>
+	<string name="order_goods_payment_prefix_txt">实付款:</string>
+	<string name="order_goods_payment_txt">￥%s</string>
+	<string name="empty_order_txt">您的账号里没有购货记录</string>
+	
+	
+	<!-- register -->
+	<string name="prefix_reg_account">账户</string>
+	<string name="prefix_reg_nickname">昵称</string>	
+	<string name="prefix_reg_passwd">密码</string>	
+	<string name="prefix_reg_confirm_passwd">确认</string>	
+	<string name="hit_reg_account">请输入E-mail</string>
+	<string name="hit_reg_nickname">请输入昵称</string>	
+	<string name="hit_reg_passwd">请输入密码（至少6位）</string>	
+	<string name="hit_reg_confirm_passwd">请再次输入密码</string>	
+	<string name="agree_and_reg">同意接受优丽印条款</string>	
+	<string name="reg_confirm">确定</string>
+	<string name="reg_cancel">取消</string>
+	<string name="reg_title">注册优丽印账户</string>
+	
+	<!-- trolley -->
+	<string name="change_delivery_address">更改收货地址</string>
+	<string name="goods_fee">货物小计:%s元</string>
+	<string name="express_fee">快递费:%s元</string>
+	<string name="goods_receiver">收货人:%s</string>
+	<string name="goods_delivery_address">收货地址:</string>
+	<string name="telphone_number">联系电话:%s</string>
+	<string name="zip_code">邮编:%s</string>
+	<string name="actual_pay">实际付款：</string>
+	<string name="pay_yuan">%s元</string>
+	<string name="prompt_payment">立即付款</string>
+	<string name="trolley_help">帮助</string>
+	<string name="call_the_yly">致电\u0020\u0020优丽印</string>
+	<string name="please_choose_payment_way">请选择付款方式</string>
+	<string name="empty_cart_txt">您的购物车里没有商品</string>
+	<string name="toast_delete_cart_item">删除选中购物车项?</string>
+	<string name="empty_trolley_receiver">收货信息不能为空</string>
+	<string name="goods_receiver_null">收货人:</string>
+	<string name="goods_delivery_address_null">收货地址:</string>
+	<string name="telphone_number_null">联系电话:</string>
+	<string name="zip_code_null">邮编:</string>
+	
+	<!-- share -->
+	<string name="share_title">购物分享</string>
+	<string name="share_to_post">发帖</string>
+	<string name="share_sort">排序</string>
+	<string name="share_to_blog">官方微博</string>
+	<string name="share_item_like">/喜欢</string>
+	<string name="post_title">新发帖</string>
+	<string name="post_content_number_limit_txt">最多150字</string>
+	
+	<!-- deliver address -->
+	<string name="add_deliver_address_txt">添加新地址</string>
+	<string name="deliver_name_txt">收货人姓名</string>
+	<string name="phone_number_txt">手机号码</string>
+	<string name="post_code_txt">邮政编码</string>
+	<string name="location_area_txt">所在地区</string>
+	<string name="detial_address_txt">详细地址</string>
+	<string name="deliver_name_none_toast_txt">收货人姓名不能为空</string>
+	<string name="phone_number_none_toast_txt">手机号码不能为空</string>
+	<string name="post_code_none_toast_txt">邮政编码不能为空</string>
+	<string name="location_area_none_toast_txt">所在地区不能为空</string>
+	<string name="detial_address_none_toast_txt">详细地址不能为空</string>
+	<string name="add_failed_toast_txt">添加失败</string>
+	<string name="edit_deliver_address_txt">修改地址</string>
+	<string name="del_deliver_address_txt">删除地址</string>
+	<string name="set_default_deliver_address">设为默认收货地址</string>
+	<string name="edit_or_del_deliver_address_txt">修改或删除收货地址？</string>
+	<string name="null_deliver_address">没有收货地址请至账户添加！</string>
+	
+	<!-- alipy -->
+	<string name="confirm_install_hint">"安装提示"</string>	
+	<string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+	<string name="Ensure">"确定"</string>
+	<string name="Cancel">"取消"</string>
+	<string name="check_sign_failed">您的订单信息已被非法篡改。</string> 
+	
+	<string name="remote_call_failed">Failure calling remote service</string>
+       
+	<string name="partnerHint">"partner"</string>
+	<string name="sellerHint">"seller"</string>
+	<string name="out_trade_noHint">"out_trade_no"</string>
+	<string name="subjectHint">"subject"</string>
+	<string name="bodyHint">"body"</string>
+	<string name="total_feeHint">"total_fee"</string>
+	<string name="notify_urlHint">"notify_url"</string>
+	<string name="charsetHint">"charset"</string>
+	<string name="signTypeHint">"signType"</string>
+	<string name="sdCard_isNot_found">sd卡无法找到</string>
+	<string name="please_login">请先登录</string>
+	<string name="prompt">提示</string>
+	<string name="prompt_pay_success">支付成功,交易状态码：</string>
+	<string name="prompt_pay_failed">支付失败,交易状态码：</string>
+	<string name="miss_partner_seller">缺少partner或者seller</string>
+	<string name="paying_progress">正在支付</string>
+	<string name="select_finishi">完成</string>
+	<string name="select_size_color">尺寸和颜色选择</string>
+	
+	<!-- add choose all chinese to strings -->
+	<string name="transparent_small_square">透明色小方形32x40mm</string>
+	<string name="no_frame_canvas">无框油画</string>
+	<string name="hava_support_canvas">带支架油画</string>
+	<string name="jingxuanzhangzhongbao">晶炫掌中宝</string>
+	<string name="no_temp">无模版</string>
+	<string name="no_temp_choose">无模版选择</string>
+	<string name="change">更改</string>
+	<string name="select">选择</string>
+	<string name="photo_frame_canvas">相框油画</string>
+	<string name="exit_again">再按一次退出程序</string>
+	<string name="balloon_size">气球尺寸</string>
+	<string name="please_choose_balloon_size">请选择气球尺寸</string>
+	<string name="square">方形</string>
+	<string name="heart_shaped">心形</string>
+	<string name="small">小</string>
+	<string name="big">大</string>
+	<string name="transparent_box_desk_calendar">透明盒装台历</string>
+	<string name="paper_desk_calendar">纸质台历</string>
+	<string name="size_choose">尺寸选择</string>
+	<string name="please_choose_photo_frame_colour">请选择相片册颜色</string>
+	<string name="jingxuan_photo">晶炫相片册</string>
+	<string name="delivery_address">收货地址：</string>
+	<string name="consignee">收货人：</string>
+	<string name="photo_number">收货地址：</string>
+	<string name="photo_frame_colour_choose">相框颜色\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020选择 </string>
+	<string name="circular_balloon">圆形气球</string>           
+	<string name="heart_balloon">心形气球 </string>
+	<string name="star_balloon">星形气球</string>
+	<string name="balloon_size_choose">气球尺寸" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "选择</string>
+	<string name="desk_calendar_size_choose">台历尺寸&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;选择</string>
+	<string name="photo_colour_choose">照片册颜色&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;选择</string>
+	
+	<!-- colour name -->
+	<string name="two_face_only_one_photo">两面同一张照片印刷</string>
+	<string name="peachblossom">&#160;&#160;&#160;&#160;&#160;桃红色</string>
+	<string name="colour_white">&#160;&#160;&#160;&#160;&#160;白色</string>
+	<string name="colour_black">&#160;&#160;&#160;&#160;&#160;黑色</string>
+	<string name="colour_yellow">&#160;&#160;&#160;&#160;&#160;黄色</string>
+	<string name="colour_blue">&#160;&#160;&#160;&#160;&#160;蓝色</string>
+	<string name="colour_orange">&#160;&#160;&#160;&#160;&#160;橙色</string>
+	<string name="colour_big_red">&#160;&#160;&#160;&#160;&#160;大红色</string>
+	<string name="colour_green">&#160;&#160;&#160;&#160;&#160;绿色</string>
+	<string name="colour_transparent">&#160;&#160;&#160;&#160;&#160;透明色</string>
+	<string name="colour_symphony_of_silver">&#160;&#160;&#160;&#160;&#160;幻彩银</string>
+	<string name="colour_magic_winnings">&#160;&#160;&#160;&#160;&#160;幻彩金</string>
+	<string name="colour_huan_cai_hong">&#160;&#160;&#160;&#160;&#160;幻彩红</string>
+	<string name="colour_huan_cai_hei">&#160;&#160;&#160;&#160;&#160;幻彩黑</string>
+	<string name="hide">隐藏</string>
+	
+	<string name="small_square">小方形32x40mm</string>
+	<string name="big_square">大方形  51x68mm</string>
+	<string name="small_heart_shaped">小心形35x48mm</string>
+	<string name="big_heart_shaped">大心形  50X65mm</string>
+	
+	<string name="four_multiply_six">4x6寸</string>
+	<string name="five_multiply_eight">5x8寸</string>
+	<string name="eight_multiply_ten_A4">8x10寸(A4)</string>
+	
+	<string name="deep_wood_lines">深木纹</string>
+	<string name="light_wood_lines">浅木纹</string>
+	<string name="silver_gray">银灰色</string>
+	<string name="transparent_matting">透明磨砂</string>
+	<string name="black_leechee_lines">黑色荔枝纹</string>
+	<string name="have_space_transparent_matting">&#160;&#160;&#160;&#160;&#160;透明磨砂</string>
+	<string name="have_space_black_leechee_lines">&#160;&#160;&#160;&#160;&#160;黑色荔枝纹</string>
+	
+	<string name="difference">不同</string>
+	<string name="banner">横幅</string>
+	<string name="vertical_amplitude ">竖幅</string>
+	
+	
+	<!-- phone alterDiolog-->
+	<string name="phone_sure_bottom">好</string>
+	<string name="phone_cancel_bottom">取消</string>
+	<string name="phone_message">4008519800</string>
+	<string name="phone_number_error_toast_txt">手机号码只能为11位数字</string>
+	<string name="post_code_error_toast_txt">邮政编码只能为6位数字</string>
+	<string name="phone_number_form_error_toast_txt">手机号码格式不符</string>
+	<string name="post_code_form_error_toast_txt">邮政编码格式不符</string>
+	
+	
+	
+	
+	<!-- photo album -->
+	<string name="photo_album_n_month_temp">添加%s月模板</string>
+	<string name="photo_album_n_month_pic">添加%s月照片</string>
+	<string name="photo_album_choose_cover_temp">选择封面模板</string>
+	<string name="photo_album_choose_cover_pic">选择封面照片</string>
+	<string name="photo_album_choose_reverse_temp">选择封底模板</string>
+	<string name="photo_album_choose_reverse_pic">选择封底照片</string>
+	<string name="please_add_pic">请添加图片</string>
+	<string name="please_add_pic_continue">请继续添加图片</string>
+	<string name="please_add_temp">请添加模版</string>
+	<string name="please_add_temp_continue">请继续添加模版</string>
+	<string name="add_horizontal_pic">请添加横幅照片</string>
+	<string name="add_vertical_pic">请添加竖幅照片</string>
+	<string name="dialog_title_load">正在加载请稍候...</string>
+	
+	<string name="photo_album_add_temp">添加模版</string>
+	<string name="photo_album_add_pic">添加照片</string>
+	
+	<string name="photo_album_add_face_pic">添加正面图片</string>
+	<string name="photo_album_add_side_pic">添加反面图片</string>
+	<string name="photo_album_add_face_temp">添加正面模版</string>
+	<string name="photo_album_add_side_temp">添加反面模版</string>
+	<string name="photo_album_modify_temp">更换模版</string>
+	<string name="photo_album_choose_temp">选择模版</string>
+	<string name="photo_album_modify_pic">更换照片</string>
+	<string name="photo_album_n_land_pic">添加%s张横幅照片</string>
+	<string name="photo_album_n_pic">添加%s张竖幅照片</string>
+	<string name="photo_album_n_inner_page_pic">添加内面%s张照片</string>
+	<string name="photo_album_n_page_pic">添加%s张竖幅照片</string>
+	<string name="photo_album_choose_front_temp_pic">选择正面模版和照片</string>
+	<string name="photo_album_choose_back_temp_pic">选择反面模板和照片</string>
+	<string name="photo_album_choose_cover_temp_pic">选择封面模板和照片</string>
+	<string name="photo_album_choose_reverse_temp_pic">选择封底模板和照片</string>
+	<string name="photo_album_n_month_temp_pic">%s月份模板和照片</string>
+	<string name="photo_album_cover_pic">添加封面照片</string>
+	<string name="photo_album_reverse_pic">添加封底照片</string>
+	<string name="photo_album_dialog_un_finish_upload_pic">图片正在上传，请稍候再试</string>
+	
+	<!-- buket detial activity -->
+	<string name="buket_detial_select_pic_txt">当前选中%1$s张(最多%2$s张)</string>
+	<string name="buket_detial_select_un_full_txt">请选择至少%s张照片</string>
+</resources>

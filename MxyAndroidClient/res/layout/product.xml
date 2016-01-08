@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- search bar -->
+
+    <FrameLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/search_bar_bg"
+        android:paddingLeft="@dimen/search_bar_padding_left_right"
+        android:paddingRight="@dimen/search_bar_padding_left_right">
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_edit_bg"
+            android:hint="@string/search_edit_hit"
+            android:maxLines="1"
+            android:paddingLeft="40dip"
+            android:paddingRight="8dip"
+            android:singleLine="true" 
+            android:gravity="center_vertical"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/search_edit_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/search_edit_zoom" 
+            android:gravity="center_vertical"/>
+    </FrameLayout>
+
+    <!-- content list -->
+
+    <ListView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="@null"
+        android:layout_marginBottom="@dimen/guide_bar_btn_height">
+    </ListView>
+</LinearLayout>

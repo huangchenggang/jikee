@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:clickable="true" 
+    android:background="@drawable/product_view_item_bg">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:paddingLeft="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/mask_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/mask_selector"
+        android:clickable="true"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name_en"
+            style="@style/product_view_name_en_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="PocketBook" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/product_view_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:duplicateParentState="true"
+            android:text="晶炫掌中宝" />
+    </LinearLayout>
+
+</FrameLayout>

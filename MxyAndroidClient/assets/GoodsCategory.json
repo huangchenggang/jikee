@@ -1,0 +1,55 @@
+{
+    "status":"success",
+    "list":[
+        {
+            "id":"1",
+			"name":"Photo Balloon",
+            "metaKeywords":"Photo Balloon",
+			"iconPath":"goodsCategory/product_category_0001.png",
+			"metaDescription":"将你的照的照片印制在气球上",
+			"descImagePath":"goods/body_showpic_01.png"
+        },
+        {
+            "id":"2",
+			"name":"Mini Album",
+            "metaKeywords":"Mini Album",
+			"iconPath":"goodsCategory/product_category_0002.png",
+			"metaDescription":"小小相册，大大回忆",
+			"descImagePath":"goods/body_showpic_02.png"
+        },
+        {
+            "id":"3",
+            "name":"Photo Calendar",
+            "metaKeywords":"Photo Calendar",
+			"iconPath":"goodsCategory/product_category_0003.png",
+			"metaDescription":"定制属于你的台历",
+			"descImagePath":"goods/body_showpic_03.png"
+        },
+        {
+			"id":"4",
+            "name":"Canvas Frame",
+            "metaKeywords":"Canvas Frame",
+			"iconPath":"goodsCategory/product_category_0004.png",
+			"metaDescription":"把你的照片变成油画",
+			"descImagePath":"goods/body_showpic_04.png"
+        },
+        {
+			"id":"5",
+            "name":"Photo Booklet",
+            "metaKeywords":"Photo Booklet",
+			"iconPath":"goodsCategory/product_category_0005.png",
+			"metaDescription":"定制属于你的图片册",
+			"descImagePath":"goods/body_showpic_05.png"
+        },
+        {
+			
+			
+			"id":"6",
+            "name":"Prepaid Card",
+            "metaKeywords":"Prepaid Card",
+			"iconPath":"goodsCategory/product_category_0006.png",
+			"metaDescription":"充值卡享受更多优惠",
+			"descImagePath":""
+        }
+    ]
+}

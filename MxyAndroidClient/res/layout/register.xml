@@ -1,0 +1,243 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/title_bar_height"
+                android:background="@drawable/login_areg_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/login_input_area_margin_left_right"
+                android:paddingRight="@dimen/login_input_area_margin_left_right" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/login_edit_margin_top"
+                    android:background="@drawable/login_edit_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reg_prefix_txt_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/prefix_reg_account" />
+
+                    <EditText
+                        android:id="@+id/account_edit"
+                        style="@style/reg_hit_txt_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@null"
+                        android:hint="@string/hit_reg_account"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/login_edit_margin_top"
+                    android:background="@drawable/login_edit_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reg_prefix_txt_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/prefix_reg_nickname" />
+
+                    <EditText
+                        android:id="@+id/nickname_edit"
+                        style="@style/reg_hit_txt_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@null"
+                        android:hint="@string/hit_reg_nickname"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/login_edit_margin_top"
+                    android:background="@drawable/login_edit_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reg_prefix_txt_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/prefix_reg_passwd" />
+
+                    <EditText
+                        android:id="@+id/passwd_edit"
+                        style="@style/reg_hit_txt_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@null"
+                        android:hint="@string/hit_reg_passwd"
+                        android:password="true"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/login_edit_margin_top"
+                    android:background="@drawable/login_edit_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reg_prefix_txt_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/prefix_reg_confirm_passwd" />
+
+                    <EditText
+                        android:id="@+id/confirm_passwd_edit"
+                        style="@style/reg_hit_txt_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@null"
+                        android:hint="@string/hit_reg_confirm_passwd"
+                        android:password="true"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_edit_margin_top"
+                    android:layout_marginTop="@dimen/login_edit_margin_top" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/agree_and_reg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:button="@drawable/remember_passwd_chk_selector" 
+                            android:enabled="false"
+                            android:checked="true"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/agree_and_reg"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/login_common_txt_size"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="2dp"
+                                android:background="@color/white" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/comfirm"
+                        style="@style/login_reg_btn_txt_style"
+                        android:layout_width="@dimen/login_btn_width"
+                        android:layout_height="@dimen/login_btn_height"
+                        android:layout_gravity="center_vertical|right"
+                        android:background="@drawable/login_btn_selector"
+                        android:text="@string/reg_confirm" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- forgot password -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/welcome_small" />
+
+            <!-- copy right -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/copy_right_margin_bottom"
+                android:layout_marginTop="@dimen/copy_right_margin_top"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/copy_right_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/copy_right_cn" />
+
+                <TextView
+                    style="@style/copy_right_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/copy_right_en" />
+
+                <TextView
+                    style="@style/copy_right_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/copy_right_baseline" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- title bar -->
+
+    <com.extensivepro.mxl.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+</FrameLayout>

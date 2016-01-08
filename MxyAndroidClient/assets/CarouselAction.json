@@ -1,0 +1,83 @@
+{
+    "name":"hello api",
+    "list":[
+        {
+            "id":"1",
+            "title":"test",
+            "imageSrc":"homePage/carousel01.png",
+            "actionParams":"",
+            "actionType":"SALES",
+            "modifyDate":{
+                
+            },
+            "createDate":{
+                
+            }
+        },
+        {
+            "id":"2",
+            "title":"test",
+            "imageSrc":"homePage/carousel02.png",
+            "actionParams":"",
+            "actionType":"SALES",
+            "modifyDate":{
+                
+            },
+            "createDate":{
+                
+            }
+        },
+        {
+            "id":"3",
+            "title":"test",
+            "imageSrc":"homePage/carousel03.png",
+            "actionParams":"",
+            "actionType":"SALES",
+            "modifyDate":{
+                
+            },
+            "createDate":{
+                
+            }
+        },
+        {
+            "id":"4",
+            "title":"test",
+            "imageSrc":"homePage/carousel04.png",
+            "actionParams":"",
+            "actionType":"SALES",
+            "modifyDate":{
+                
+            },
+            "createDate":{
+                
+            }
+        },
+        {
+            "id":"5",
+            "title":"test",
+            "imageSrc":"homePage/carousel05.png",
+            "actionParams":"",
+            "actionType":"SALES",
+            "modifyDate":{
+                
+            },
+            "createDate":{
+                
+            }
+        },
+        {
+            "id":"6",
+            "title":"test",
+            "imageSrc":"homePage/carousel06.png",
+            "actionParams":"",
+            "actionType":"SALES",
+            "modifyDate":{
+                
+            },
+            "createDate":{
+                
+            }
+        }
+    ]
+}

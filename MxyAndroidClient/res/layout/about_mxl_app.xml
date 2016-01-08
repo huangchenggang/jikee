@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:accountitem="http://schemas.android.com/apk/res/com.extensivepro.mxl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg_colour_02"
+    android:orientation="vertical" >
+
+    <com.extensivepro.mxl.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+    <ImageView android:id="@+id/version_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" 
+        android:text="@string/version_info"/>
+
+    <com.extensivepro.mxl.widget.AccountItem
+        android:id="@+id/software_license_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/acount_item_height"
+        android:layout_marginLeft="@dimen/acount_item_margin"
+        android:layout_marginRight="@dimen/acount_item_margin"
+        android:layout_marginTop="@dimen/acount_item_margin"
+        accountitem:text="@string/software_license_agreement_txt"
+        android:background="@drawable/account_item_top_selector"
+        android:clickable="true"
+        android:gravity="center" />
+
+    <com.extensivepro.mxl.widget.AccountItem
+        android:id="@+id/special_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/acount_item_height"
+        android:layout_marginLeft="@dimen/acount_item_margin"
+        android:layout_marginRight="@dimen/acount_item_margin"
+        accountitem:text="@string/special_instruction_txt"
+        android:background="@drawable/account_item_center_selector"
+        android:clickable="true"
+        android:gravity="center" />
+
+    <com.extensivepro.mxl.widget.AccountItem
+        android:id="@+id/use_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/acount_item_height"
+        android:layout_marginBottom="@dimen/acount_item_margin"
+        android:layout_marginLeft="@dimen/acount_item_margin"
+        android:layout_marginRight="@dimen/acount_item_margin"
+        accountitem:text="@string/use_help_txt"
+        android:background="@drawable/account_item_bottom_selector"
+        android:clickable="true"
+        android:gravity="center" />
+
+</LinearLayout>

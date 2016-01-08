@@ -1,0 +1,178 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4.5" >
+
+                    <ImageView
+                        android:id="@+id/iv_album"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pic_big_heart_001"
+                        android:visibility="invisible" />
+
+                    <ProgressBar
+                        android:id="@+id/load_progress"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="5.5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/detial_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Photo Booklet"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detial_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="晶炫照片册"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/price_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="价格：RMB "
+                            android:textColor="@color/red" />
+
+                        <TextView
+                            android:id="@+id/tv_prize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="00.00"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_metaDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="封面为透明磨砂,每本20张照片印刷"
+                        android:textColor="@color/photo_album_detial_desc_txt_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="预计发货时间：2个工作日"
+                        android:textColor="@color/photo_album_detial_desc_txt_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/change_photo_color"
+                style="@style/home_page_btn_style"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/change_photo_style_btn_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="尺寸和颜色                         选择 "
+                android:textColor="@color/black" />
+
+            <ListView
+                android:id="@+id/photo_album_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:divider="@null"
+                android:dividerHeight="20dp"
+                android:fadingEdge="none"
+                android:listSelector="#FFFFFF"
+                android:numColumns="2" />
+
+            <TextView
+                android:id="@+id/hide_list_margin"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <TextView
+                android:id="@+id/add_shoppingcart"
+                style="@style/home_page_btn_style"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/common_btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/pay_now_btn_selector"
+                android:text="添加到购物车"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/hide_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hide_bottom_margin" />
+        </LinearLayout>
+    </ScrollView>
+    <!-- title bar -->
+
+    <com.extensivepro.mxl.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+    <ImageView
+        android:id="@+id/free_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"
+        android:background="@drawable/box_freelable_01" />
+
+</FrameLayout>

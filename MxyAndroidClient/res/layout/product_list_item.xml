@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/product_list_item_height"
+    android:orientation="horizontal" 
+    android:background="@drawable/product_list_item_bg_selector">
+
+    <FrameLayout
+        android:layout_width="0dip"
+        android:layout_height="@dimen/product_list_item_height"
+        android:layout_gravity="center"
+        android:layout_weight="5.2">
+        <ImageView
+            android:id="@+id/product_list_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5.7"
+            android:adjustViewBounds="true"
+            android:duplicateParentState="true"
+            android:fitsSystemWindows="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:scaleType="fitXY" />
+        <ProgressBar android:id="@+id/load_progress"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    style="?android:attr/progressBarStyleSmall"
+		    android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical" 
+        android:gravity="center_vertical|left">
+
+        <TextView
+            android:id="@+id/product_list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            style="@style/product_list_item_title_style"
+            android:text="Photo Balloon"/>
+        <TextView
+            android:id="@+id/product_list_item_detial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="5dip"
+            style="@style/product_list_item_detial_style"
+            android:text="将你的照片印在气球上"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/product_list_arrow"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/product_list_item_arrow_height"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:duplicateParentState="true"
+        android:gravity="center"
+        android:src="@drawable/product_list_item_arrow_selector" />
+
+</LinearLayout>

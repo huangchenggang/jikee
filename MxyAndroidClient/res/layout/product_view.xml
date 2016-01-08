@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+    <ScrollView
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:fadingEdge="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+            <com.extensivepro.mxl.widget.ProductViewItemLayout
+                android:id="@+id/navigate_item_contianer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" 
+                android:layout_marginTop="@dimen/title_bar_height">
+            </com.extensivepro.mxl.widget.ProductViewItemLayout>
+
+            <ImageView
+                android:id="@+id/desc_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/free" />
+        </LinearLayout>
+    </ScrollView>
+     <!-- title bar -->
+	 <com.extensivepro.mxl.widget.TitleBar
+              android:id="@+id/title_bar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" 
+              android:layout_gravity="top"/>
+</FrameLayout>

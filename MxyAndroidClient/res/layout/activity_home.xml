@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <FrameLayout
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <com.extensivepro.mxl.widget.GuideBar
+        android:id="@+id/m_guide_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guide_bar_btn_height"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

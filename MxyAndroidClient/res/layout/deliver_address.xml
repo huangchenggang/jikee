@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg_colour_02" 
+    android:orientation="vertical">
+
+    <!-- title bar -->
+
+    <com.extensivepro.mxl.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/m_deliver_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginBottom="@dimen/guide_bar_btn_height"
+        android:layout_marginLeft="@dimen/deliver_address_item_margin"
+        android:layout_marginRight="@dimen/deliver_address_item_margin"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"/>
+
+</LinearLayout>

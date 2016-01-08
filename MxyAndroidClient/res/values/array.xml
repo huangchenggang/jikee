@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="address">
+        <item>删除收货地址</item>
+        <item>修改收货地址</item>
+        <item>设置默认收货地址</item>
+    </string-array>
+    <string-array name="share_choose_order_type">
+        <item>时间排序</item>
+        <item>喜欢排序</item>
+    </string-array>
+
+</resources>

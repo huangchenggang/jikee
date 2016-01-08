@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/photo_album_pic_item_width"
+    android:layout_height="@dimen/photo_album_pic_item_height" >
+
+    <ImageView
+        android:id="@+id/image_choose_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/addphoto2_btn_selector"
+        android:duplicateParentState="true" />
+    <TextView
+        android:id="@+id/progress_choose_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <ProgressBar
+        android:id="@+id/progress_bar_choose_pic"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"/>
+
+</FrameLayout>

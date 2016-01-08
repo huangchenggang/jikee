@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/order_list_item_height"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/order_list_item_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/order_list_item_margin"
+            android:src="@drawable/start_18cm"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/order_goods_item_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Photo Balloon"
+                style="@style/order_list_common_txt_style"
+                android:textStyle="bold"
+                android:gravity="left|bottom"/>
+            <TextView
+                android:id="@+id/order_goods_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="圆形气球"
+                style="@style/order_list_common_txt_style"
+                android:gravity="left|bottom"/>
+
+            <TextView
+                android:id="@+id/order_goods_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="18cm圆形气球照片 单面印制"
+                style="@style/order_list_common_txt_style"
+                android:gravity="left|top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/order_goods_item_count_prefix"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_goods_item_count_prefix_txt"
+                    style="@style/order_list_common_txt_style" />
+                <TextView
+                    android:id="@+id/order_goods_item_count"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="2"
+                    style="@style/order_list_black_txt_style"/>
+                <TextView
+                    android:id="@+id/order_goods_payment_prefix"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/order_goods_payment_prefix_txt"
+                    style="@style/order_list_common_txt_style" 
+                    android:layout_marginLeft="@dimen/order_list_item_margin"
+                    android:gravity="right"/>
+                <TextView
+                    android:id="@+id/order_goods_payment"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/order_goods_payment_txt"
+                    style="@style/order_list_black_txt_style"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/order_item_line_margin"
+            android:layout_marginRight="@dimen/order_item_line_margin"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/orders_line" />
+
+</LinearLayout>

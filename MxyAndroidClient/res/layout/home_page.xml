@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!--
+             <Gallery
+            android:id="@+id/navigate_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:background="#000000" />
+        -->
+
+		<FrameLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+		    android:clickable="true">
+		    <com.extensivepro.mxl.widget.HomeNavigatorGallery
+		        android:id="@+id/navigate_gallery"
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/carousel_pic_height"
+		        android:fadingEdge="none"/>
+		    <LinearLayout
+		        android:id="@+id/navigate_image_count_group"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal|bottom"
+		        android:gravity="center_horizontal|bottom"
+		        android:visibility="invisible" >
+		    </LinearLayout>
+		</FrameLayout>
+
+		<FrameLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+		    
+	        <ImageView
+	            android:id="@+id/free_sale_image"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+	            android:layout_gravity="center_horizontal"
+	            android:src="@drawable/free"/>
+	        
+	        <TextView 
+	            android:id="@+id/get_it_now"
+	            android:layout_width="@dimen/home_page_btn_width"
+	            android:layout_height="@dimen/home_page_btn_height"
+	            android:text="@string/get_it_now"
+	            android:layout_gravity="center_horizontal"
+	            android:gravity="center"
+	            android:background="@drawable/get_it_now_btn_selector"
+	            style="@style/home_page_btn_style"
+	            android:layout_marginTop="@dimen/home_page_get_it_now_margin_top"
+	            android:layout_marginBottom="40dp"
+	            android:enabled="false"/>
+	        
+	        <TextView 
+	            android:id="@+id/pay_now"
+	            android:layout_width="@dimen/home_page_btn_width"
+	            android:layout_height="@dimen/home_page_btn_height"
+	            android:text="@string/pay_now"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/pay_now_btn_selector"
+	            style="@style/home_page_btn_style"
+	            android:layout_marginTop="@dimen/home_page_pay_now_margin_top"
+	            android:layout_marginBottom="10dp"/>
+		</FrameLayout>
+        <TextView 
+            android:id="@+id/hide_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hide_bottom_margin"/>
+		
+    </LinearLayout>
+
+</ScrollView>

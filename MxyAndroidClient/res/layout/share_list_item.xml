@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/share_post_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/share_list_item_title_layout_height"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="dhasdds"
+            android:textColor="@color/share_list_item_name_txt_color"
+            android:textSize="@dimen/share_list_item_title_txt_size" />
+
+        <TextView
+            android:id="@+id/tv_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/share_list_item_title_content_padding_left_right"
+            android:gravity="center_vertical"
+            android:text="2013.05.04 18:30:12"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/share_list_item_title_txt_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:id="@+id/post_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="收到的气球很漂亮，现在你才选择啊啊啊啊啊啊啊啊啊啊啊"
+            android:textSize="@dimen/share_list_item_post_content_txt_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/post_item_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/share_list_item_post_picture_padding"
+            android:layout_marginTop="@dimen/share_list_item_post_picture_padding"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/post_item_picture"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/post_item_like_picture"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/btn_like_light"
+               />
+
+            <TextView
+                android:id="@+id/tv_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/share_list_item_post_like_txt_size" />
+
+            <TextView
+                android:id="@+id/like_post_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_item_like"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/share_list_item_post_like_txt_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/account_item_normal_selector"
+    android:orientation="vertical" >
+ 
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/deliver_address_item_height"
+            android:layout_margin="@dimen/deliver_address_item_margin" >
+
+            <TextView
+                android:id="@+id/deliver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/deliver_address_item_margin"
+                android:singleLine="true"
+                android:text="收货人1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/deliver_address_item_name_txt_size" />
+ 			<TextView
+            android:id="@+id/deliver_phone_number"
+            android:layout_below="@id/deliver_name"
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/deliver_address_item_margin"
+            android:text="138138138"
+            android:textSize="@dimen/deliver_address_item_number_txt_size" />
+ 
+            <TextView
+                android:id="@+id/deliver_address"
+                 android:layout_below="@id/deliver_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/deliver_address_item_margin"
+                android:singleLine="true"
+                android:text="学府路52号"
+                android:textSize="@dimen/deliver_address_item_address_txt_size" />
+
+
+       
+
+        <ImageView
+            android:id="@+id/default_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_success_02" />
+
+        
+    </RelativeLayout>
+
+</RelativeLayout>

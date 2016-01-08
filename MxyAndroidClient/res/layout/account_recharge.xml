@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg_colour_02"
+    android:orientation="vertical" >
+
+    <com.extensivepro.mxl.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView  android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cur_account"
+                    style="@style/account_info_txt_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cur_account_txt" />
+
+                <TextView
+                    android:id="@+id/available_balance"
+                    style="@style/account_info_txt_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/available_balance_txt" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/account_recharge_top_remark_padding_top"
+                    android:text="@string/account_recharge_top_remark_txt"
+                    android:textSize="@dimen/account_recharge_top_remark_txt_size" />
+                <ListView 
+                    android:id="@+id/account_recharge_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/account_recharge_item_margin"
+    				android:layout_marginRight="@dimen/account_recharge_item_margin"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent">
+                    
+                </ListView>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/account_recharge_bottom_remark_margin_left_top"
+                    android:layout_marginTop="@dimen/account_recharge_bottom_remark_margin_left_top"
+                    android:text="@string/account_recharge_bottom_remark_txt"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/account_recharge_bottom_remark_txt_size" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/guide_bar_btn_height"
+                    android:layout_marginBottom="@dimen/guide_bar_btn_height"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    
+   
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/feedback_me_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/post_title_bar_padding_all"
+            android:background="@drawable/post_btn_del_seletor" />
+
+        <TextView
+            android:id="@+id/feedback_me_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/post_title_bar_padding_all"
+            android:background="@drawable/post_btn_sure_seletor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/post_title_bar_margin_left"
+            android:background="@drawable/post_long_top"
+            android:gravity="center"
+            android:text="@string/feedback_me_txt"
+            android:textSize="@dimen/post_title_bar_txt_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/feedback_content_txt_margin"
+        android:layout_marginRight="@dimen/feedback_content_txt_margin"
+        android:layout_marginTop="@dimen/feedback_content_txt_margin"
+        android:layout_marginBottom="@dimen/feedback_content_txt_margin"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/feedback_content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="top"
+            android:textSize="@dimen/feedback_content_txt_size" />
+    </LinearLayout>
+
+</LinearLayout>

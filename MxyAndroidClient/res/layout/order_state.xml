@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:accountitem="http://schemas.android.com/apk/res/com.extensivepro.mxl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/body_bg_colour_02">
+
+    <ScrollView
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/guide_bar_btn_height"
+        	android:paddingTop="@dimen/title_bar_height" 
+        	>
+
+
+            <com.extensivepro.mxl.widget.AccountItem
+                android:id="@+id/unpay_orders"
+                android:layout_width="match_parent"
+			    android:layout_height="@dimen/acount_item_height"
+			    android:layout_marginTop="@dimen/acount_item_margin"
+			    android:layout_marginLeft="@dimen/acount_item_margin"
+			    android:layout_marginRight="@dimen/acount_item_margin"
+                accountitem:text="@string/unpay_orders_txt"
+                android:clickable="true"
+                android:background="@drawable/account_item_top_selector"
+                android:gravity="center"/>
+            <com.extensivepro.mxl.widget.AccountItem
+                android:id="@+id/order_history"
+                android:layout_width="match_parent"
+			    android:layout_height="@dimen/acount_item_height"
+			    android:layout_marginBottom="@dimen/acount_item_margin"
+			    android:layout_marginLeft="@dimen/acount_item_margin"
+			    android:layout_marginRight="@dimen/acount_item_margin"
+                accountitem:text="@string/order_history_txt"
+                android:clickable="true"
+                android:background="@drawable/account_item_bottom_selector"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <!-- title bar -->
+
+    <com.extensivepro.mxl.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+</FrameLayout>

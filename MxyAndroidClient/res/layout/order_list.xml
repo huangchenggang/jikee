@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <FrameLayout
+        android:id="@+id/m_body_contanier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/guide_bar_btn_height"
+		android:paddingTop="@dimen/title_bar_height"
+        android:layout_gravity="center" 
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/orders_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" 
+            android:visibility="gone">
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/load_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <include
+        android:id="@+id/empty_order"
+        layout="@layout/empty_order"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+	<com.extensivepro.mxl.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="top"/>
+
+</FrameLayout>
